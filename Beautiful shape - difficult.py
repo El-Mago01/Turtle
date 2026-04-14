@@ -62,7 +62,6 @@ def draw_filled_square(start_angle, length, fill_color, direction):
     turtle.hideturtle()
     turtle.penup()
 
-
 set_screen(back_ground_color, "Martin's Turtle Show", 800, 400)
 change_pos(start_pos_x, start_pos_y)
 nr_of_squares = 5

@@ -1,14 +1,14 @@
 import turtle
 import math
 
+
+
 back_ground_color = "lightgrey"
 side_size = 50
 start_pos_x = 0
 start_pos_y = 0
 
-t = turtle.Turtle()
-turtle.hideturtle()
-turtle.penup()
+
 
 
 def set_screen(bgcolor, title, x, y):
@@ -26,6 +26,7 @@ def change_pos(x, y):
     turtle.setx(-x)
     turtle.sety(-y)
     turtle.pendown()
+
 
 
 def draw_filled_shape(start_angle, nr_of_sides,center_pos_x, center_pos_y, mid_side_to_center, fill_color:str, pen_color:str):
@@ -68,7 +69,7 @@ def draw_filled_shape(start_angle, nr_of_sides,center_pos_x, center_pos_y, mid_s
 
 def create_shapes(start_angle, nr_of_shapes, nr_of_sides, start_pos_x, start_pos_y,
                    padding, fill_color_list, pen_color_list,small_to_large):
-    set_screen(back_ground_color, "Martin's Turtle Show", 800, 400)
+    set_screen(back_ground_color, "Martin's Turtle Show", 1200, 800)
     change_pos(start_pos_x, start_pos_y)
     cur_shape =0
     if small_to_large:
@@ -93,7 +94,13 @@ def create_shapes(start_angle, nr_of_shapes, nr_of_sides, start_pos_x, start_pos
 
 
 def main():
-    turtle.speed(2)
+    t = turtle.Turtle()
+    t.hideturtle()
+    t.penup()
+    t.speed(2)
+    screen = turtle.Screen()
+    screen.setup(width=1000, height=600, startx=-2000, starty=-700)
+
     padding=15
     start_angle = 0
     nr_of_sides=6

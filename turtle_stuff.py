@@ -1,3 +1,5 @@
+# This is another one of those brillaint turtle drawings
+
 import turtle
 
 back_ground_color = "lightgrey"
